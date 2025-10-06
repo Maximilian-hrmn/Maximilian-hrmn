@@ -14,7 +14,7 @@
                 font-family: 'Open Sans', sans-serif;
                 background-color: #f0e6d2;
                 color: #4b2e0e;
-                margin: 40px;
+                margin: 20px;
                 padding-left: 10px;
                 padding-right: 10px;
             }
@@ -28,10 +28,6 @@
             color: white;
             text-shadow: 0 0 15px rgba(0,0,0,0.6);
             }
-            .navbar {
-                display: flex;
-                justify-content: space-between;
-            }
             a {
                 text-decoration: none;
                 color: black;
@@ -39,6 +35,26 @@
             }
             a:hover {
                 text-decoration: underline;
+            }
+            .wine-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+            }
+
+            .wine-item {
+            display: flex;
+            align-items: center;
+            gap: 600px; 
+            }
+
+            .wine-item img {
+            width: 400px;
+            height: 400px;
+            object-fit: fill;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             }
             .legal-content {
                 font-size: 0.8em;
@@ -52,23 +68,37 @@
     <body>
         <section class="hero">
         <h1>Willkommen bei Herman!</h1>
-        </section>
-        
+        </section><br>
+
+        <h2>Unsere Weine</h2>
+
         <section class ="content">
-        <div class="navbar">
-        <div>
-            <div><img src="Wein 1.jpg" width="400px" height="400px"><br>
-            <a href="#">Beispiel Wein 1</a></div>
-            <div><img src="Wein 2.jpg" width="400px" height="400px"><br>
-            <a href="#">Beispiel Wein 2</a></div>
-            <div><img src="Wein 3.jpg" width="400px" height="400px"><br>
-            <a href="#">Beispiel Wein 3</a></div>
-            <div><img src="Wein 4.webp" width="400px" height="400px"><br>
-            <a href="#">Beispiel Wein 4</a></div>
-            <div><img src="Wein 5.jpg" width="400px" height="400px">
-            <a href="#">Beispiel Wein 5</a></div>
-        </div>
-        </div>
+         <div class="wine-list">
+      <div class="wine-item">
+        <img src="Wein 1.jpg" alt="Beispiel Wein 1">
+        <a href="#">Beispiel Wein 1</a>
+      </div>
+
+      <div class="wine-item">
+        <img src="Wein 2.jpg" alt="Beispiel Wein 2">
+        <a href="#">Beispiel Wein 2</a>
+      </div>
+
+      <div class="wine-item">
+        <img src="Wein 3.jpg" alt="Beispiel Wein 3">
+        <a href="#">Beispiel Wein 3</a>
+      </div>
+
+      <div class="wine-item">
+        <img src="Wein 4.webp" alt="Beispiel Wein 4">
+        <a href="#">Beispiel Wein 4</a>
+      </div>
+
+      <div class="wine-item">
+        <img src="Wein 5.jpg" alt="Beispiel Wein 5">
+        <a href="#">Beispiel Wein 5</a>
+      </div>
+    </div>
       <div class ="legal-content">
         (c) Maximilian Herman 2025 | Alle Rechte vorbehalten | <a href="impressum.html">Impressum</a> | <a href="#">Datenschutz</a>
       </div> 
