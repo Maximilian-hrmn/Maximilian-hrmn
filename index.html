@@ -18,9 +18,15 @@
                 padding-left: 10px;
                 padding-right: 10px;
             }
-            .image-container {
-                background-color: white;
-                padding: 5px;
+            .hero {
+            position: relative;
+            height: 100vh; /* voller Bildschirm */
+            background: url('Berg.jpg') center center / cover no-repeat fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 0 0 15px rgba(0,0,0,0.6);
             }
             .navbar {
                 display: flex;
@@ -44,28 +50,28 @@
     </head>
 
     <body>
+        <section class="hero">
         <h1>Willkommen bei Herman!</h1>
-        <div class="image-container">
-        <img class="Berg" src="Berg.jpg"></div><br>
-
+        </section>
+        
+        <section class ="content">
         <div class="navbar">
         <div>
-            <img src="Wein 1.jpg" width="400px" height="400px"><br>
-            <img src="Wein 2.jpg" width="400px" height="400px"><br>
-            <img src="Wein 3.WEBP" width="400px" height="400px"><br>
-            <img src="Wein 4.jpeg" width="400px" height="400px"><br>
-            <img src="Wein 5.WEBP" width="400px" height="400px">
-        </div>
-        <div>
-            <a href="#">Beispiel Wein 1</a><br>
-            <a href="#">Beispiel Wein 2</a><br>
-            <a href="#">Beispiel Wein 3</a><br>
-            <a href="#">Beispiel Wein 4</a><br>
-            <a href="#">Beispiel Wein 5</a>
+            <div><img src="Wein 1.jpg" width="400px" height="400px"><br>
+            <a href="#">Beispiel Wein 1</a></div>
+            <div><img src="Wein 2.jpg" width="400px" height="400px"><br>
+            <a href="#">Beispiel Wein 2</a></div>
+            <div><img src="Wein 3.jpg" width="400px" height="400px"><br>
+            <a href="#">Beispiel Wein 3</a></div>
+            <div><img src="Wein 4.webp" width="400px" height="400px"><br>
+            <a href="#">Beispiel Wein 4</a></div>
+            <div><img src="Wein 5.jpg" width="400px" height="400px">
+            <a href="#">Beispiel Wein 5</a></div>
         </div>
         </div>
       <div class ="legal-content">
         (c) Maximilian Herman 2025 | Alle Rechte vorbehalten | <a href="impressum.html">Impressum</a> | <a href="#">Datenschutz</a>
       </div> 
+      </section>
     </body>
 </html>
